@@ -1,0 +1,67 @@
+/* DISEÑO GENERAL DE LA PÁGINA */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #f4f4f9;
+    border-bottom: 2px solid #8300e1;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    color: #a11dff;
+    margin-bottom: 10px;
+}
+
+#dashboard {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+#estacionamiento {
+    position: relative; 
+    width: 800px;
+    height: 600px;      
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #333;
+    border-radius: 8px;
+}
+
+.cajon {
+    position: absolute;
+    width: 65px;
+    height: 35px; 
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.disponible {
+    background-color: rgba(46, 204, 113, 0.7);
+}
+
+.ocupado {
+    background-color: rgba(231, 76, 60, 0.7);
+}
+
+.en-mantenimiento {
+    background-color: rgba(241, 196, 15, 0.7);
+}
+
+#cajon1 { top: 50px; left: 100px; }
+#cajon2 { top: 50px; left: 150px; }
