@@ -1,0 +1,85 @@
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fondo oscuro elegante */
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #8300e1; /* Detalle dorado */
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    color: #a11dff;
+    margin-bottom: 10px;
+}
+
+/* Navegación */
+nav {
+    background-color: #1a1a1a;
+    padding: 10px 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    color: #a11dff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Contenido Principal */
+main {
+    /* max-width: 800px; */
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Tarjetas para cada tour */
+.tour-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.tour-card h2 {
+    color: #9d00ff;
+    margin-top: 0;
+}
+
+/* Formato para las imágenes */
+.tour-card img {
+    height: auto;
+    display: block;
+    margin: 15px auto 0 auto;
+    border: 2px solid #8c00ff;
+}

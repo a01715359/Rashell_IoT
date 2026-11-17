@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - Smart Parking</title>
+    <!-- Aquí conectas tu archivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Smart Parking - Tec de Monterrey</h1>
+
+    <section id="dashboard">
+        <p>Total de espacios: <span id="total">0</span></p>
+        <p>Espacios ocupados: <span id="ocupados">0</span></p>
+        <p>Espacios disponibles: <span id="disponibles">0</span></p>
+        <!-- Agregamos esta línea exacta que JavaScript estaba buscando -->
+        <p>En mantenimiento: <span id="en-mantenimiento">0</span></p>
+        <p>Porcentaje de ocupación: <span id="porcentaje">0</span>%</p>
+    </section>
+
+    <section id="estacionamiento">
+        <section id="estacionamiento">
+        <div class="cajon" style="top: 10px; left: 10px;"></div>
+        <div class="cajon" style="top: 10px; left: 80px;"></div>
+        <div class="cajon" style="top: 10px; left: 200px;"></div>
+        <div class="cajon" style="top: 10px; left: 270px;"></div>
+        <div class="cajon" style="top: 10px; left: 390px;"></div>
+        <div class="cajon" style="top: 10px; left: 460px;"></div>
+        <div class="cajon" style="top: 10px; left: 580px;"></div>
+        <div class="cajon" style="top: 10px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 50px; left: 10px;"></div>
+        <div class="cajon" style="top: 50px; left: 80px;"></div>
+        <div class="cajon" style="top: 50px; left: 200px;"></div>
+        <div class="cajon" style="top: 50px; left: 270px;"></div>
+        <div class="cajon" style="top: 50px; left: 390px;"></div>
+        <div class="cajon" style="top: 50px; left: 460px;"></div>
+        <div class="cajon" style="top: 50px; left: 580px;"></div>
+        <div class="cajon" style="top: 50px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 90px; left: 10px;"></div>
+        <div class="cajon" style="top: 90px; left: 80px;"></div>
+        <div class="cajon" style="top: 90px; left: 200px;"></div>
+        <div class="cajon" style="top: 90px; left: 270px;"></div>
+        <div class="cajon" style="top: 90px; left: 390px;"></div>
+        <div class="cajon" style="top: 90px; left: 460px;"></div>
+        <div class="cajon" style="top: 90px; left: 580px;"></div>
+        <div class="cajon" style="top: 90px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 130px; left: 10px;"></div>
+        <div class="cajon" style="top: 130px; left: 80px;"></div>
+        <div class="cajon" style="top: 130px; left: 200px;"></div>
+        <div class="cajon" style="top: 130px; left: 270px;"></div>
+        <div class="cajon" style="top: 130px; left: 390px;"></div>
+        <div class="cajon" style="top: 130px; left: 460px;"></div>
+        <div class="cajon" style="top: 130px; left: 580px;"></div>
+        <div class="cajon" style="top: 130px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 170px; left: 10px;"></div>
+        <div class="cajon" style="top: 170px; left: 80px;"></div>
+        <div class="cajon" style="top: 170px; left: 200px;"></div>
+        <div class="cajon" style="top: 170px; left: 270px;"></div>
+        <div class="cajon" style="top: 170px; left: 390px;"></div>
+        <div class="cajon" style="top: 170px; left: 460px;"></div>
+        <div class="cajon" style="top: 170px; left: 580px;"></div>
+        <div class="cajon" style="top: 170px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 210px; left: 10px;"></div>
+        <div class="cajon" style="top: 210px; left: 80px;"></div>
+        <div class="cajon" style="top: 210px; left: 200px;"></div>
+        <div class="cajon" style="top: 210px; left: 270px;"></div>
+        <div class="cajon" style="top: 210px; left: 390px;"></div>
+        <div class="cajon" style="top: 210px; left: 460px;"></div>
+        <div class="cajon" style="top: 210px; left: 580px;"></div>
+        <div class="cajon" style="top: 210px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 250px; left: 10px;"></div>
+        <div class="cajon" style="top: 250px; left: 80px;"></div>
+        <div class="cajon" style="top: 250px; left: 200px;"></div>
+        <div class="cajon" style="top: 250px; left: 270px;"></div>
+        <div class="cajon" style="top: 250px; left: 390px;"></div>
+        <div class="cajon" style="top: 250px; left: 460px;"></div>
+        <div class="cajon" style="top: 250px; left: 580px;"></div>
+        <div class="cajon" style="top: 250px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 290px; left: 10px;"></div>
+        <div class="cajon" style="top: 290px; left: 80px;"></div>
+        <div class="cajon" style="top: 290px; left: 200px;"></div>
+        <div class="cajon" style="top: 290px; left: 270px;"></div>
+        <div class="cajon" style="top: 290px; left: 390px;"></div>
+        <div class="cajon" style="top: 290px; left: 460px;"></div>
+        <div class="cajon" style="top: 290px; left: 580px;"></div>
+        <div class="cajon" style="top: 290px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 330px; left: 10px;"></div>
+        <div class="cajon" style="top: 330px; left: 80px;"></div>
+        <div class="cajon" style="top: 330px; left: 200px;"></div>
+        <div class="cajon" style="top: 330px; left: 270px;"></div>
+        <div class="cajon" style="top: 330px; left: 390px;"></div>
+        <div class="cajon" style="top: 330px; left: 460px;"></div>
+        <div class="cajon" style="top: 330px; left: 580px;"></div>
+        <div class="cajon" style="top: 330px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 370px; left: 10px;"></div>
+        <div class="cajon" style="top: 370px; left: 80px;"></div>
+        <div class="cajon" style="top: 370px; left: 200px;"></div>
+        <div class="cajon" style="top: 370px; left: 270px;"></div>
+        <div class="cajon" style="top: 370px; left: 390px;"></div>
+        <div class="cajon" style="top: 370px; left: 460px;"></div>
+        <div class="cajon" style="top: 370px; left: 580px;"></div>
+        <div class="cajon" style="top: 370px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 410px; left: 10px;"></div>
+        <div class="cajon" style="top: 410px; left: 80px;"></div>
+        <div class="cajon" style="top: 410px; left: 200px;"></div>
+        <div class="cajon" style="top: 410px; left: 270px;"></div>
+        <div class="cajon" style="top: 410px; left: 390px;"></div>
+        <div class="cajon" style="top: 410px; left: 460px;"></div>
+        <div class="cajon" style="top: 410px; left: 580px;"></div>
+        <div class="cajon" style="top: 410px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 450px; left: 10px;"></div>
+        <div class="cajon" style="top: 450px; left: 80px;"></div>
+        <div class="cajon" style="top: 450px; left: 200px;"></div>
+        <div class="cajon" style="top: 450px; left: 270px;"></div>
+        <div class="cajon" style="top: 450px; left: 390px;"></div>
+        <div class="cajon" style="top: 450px; left: 460px;"></div>
+        <div class="cajon" style="top: 450px; left: 580px;"></div>
+        <div class="cajon" style="top: 450px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 490px; left: 10px;"></div>
+        <div class="cajon" style="top: 490px; left: 80px;"></div>
+        <div class="cajon" style="top: 490px; left: 200px;"></div>
+        <div class="cajon" style="top: 490px; left: 270px;"></div>
+        <div class="cajon" style="top: 490px; left: 390px;"></div>
+        <div class="cajon" style="top: 490px; left: 460px;"></div>
+        <div class="cajon" style="top: 490px; left: 580px;"></div>
+        <div class="cajon" style="top: 490px; left: 650px;"></div>
+
+        <div class="cajon" style="top: 530px; left: 10px;"></div>
+        <div class="cajon" style="top: 530px; left: 80px;"></div>
+        <div class="cajon" style="top: 530px; left: 200px;"></div>
+        <div class="cajon" style="top: 530px; left: 270px;"></div>
+        <div class="cajon" style="top: 530px; left: 390px;"></div>
+        <div class="cajon" style="top: 530px; left: 460px;"></div>
+        <div class="cajon" style="top: 530px; left: 580px;"></div>
+        <div class="cajon" style="top: 530px; left: 650px;"></div>
+
+    </section>
+
+    <script src="parqueos.js"></script>
+</body>
+</html>
